@@ -1,5 +1,5 @@
 # Stat 159 - Project 1
-### Joseph Simonian
+### Author: Joseph Simonian
 
 Project Structure:
 
