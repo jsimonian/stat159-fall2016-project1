@@ -1,5 +1,5 @@
-Title:  Stat 159 - Project 1
-Author: Joseph Simonian
+# Stat 159 - Project 1
+## Joseph Simonian
 
 Project Structure:
 
