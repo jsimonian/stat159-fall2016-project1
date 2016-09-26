@@ -17,6 +17,7 @@ project
 │       │   01-introduction.md
 │       │   02-discussion.md
 │       │   03-conclusions.md
+│   
 └───images
     │   git-logo.png
     │   github-logo.png
