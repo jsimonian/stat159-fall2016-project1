@@ -54,7 +54,7 @@ Markdown is a simple markup language, designed to be easy to read and easily con
 
 - Prefacing a line with one to six "#" characters will make the line into a header. The more characters, the smaller the header. This document includes headers with one, two, and three "#" prefaces.
 
-[Links](http://http://joseph.simonian.me) and inline images ![Stat159](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/stat159-logo.png)
+[Links](http://http://joseph.simonian.me) and inline images ![Stat159](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/stat159-logo.png =400x)
 
 - Links are created in markdown by the following format: `[Link Text](link URL)`. For example, the above link is written as `[Links](http://http://joseph.simonian.me)`. Inline images are created in a similar way, with the format being `![Alt Text](image URL)`. The above image was written as `![Stat159](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/stat159-logo.png)`.
 
