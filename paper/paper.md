@@ -32,7 +32,7 @@ I will provide a brief discussion of the usage of each tool, and of how I used i
 
 ### Git
 
-![Git logo](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/git-logo.png)
+![Git logo](https://raw.githubusercontent.com/jsimonian/stat159-fall2016-project1/master/images/git-logo.png)
 
 Git is a Version Control System (VCS) - a tool used to manages changes across a large project or codebase. The advantages of version control in reproducible research are clear: with version control, authors can make modifications to their work without fear of damaging previous work, since they can roll back to earlier versions at any time. What's more, as a *Distributed* VCS, git aids authors in collaborating with others, allowing many people to work on a project at the same time without overwriting each other's work.
 
@@ -64,7 +64,7 @@ To get more information on the usage of any of these commands, simply run `git h
 
 ### Github
 
-![Githib Logo](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/github-logo.png)
+![Githib Logo](https://raw.githubusercontent.com/jsimonian/stat159-fall2016-project1/master/images/github-logo.png)
 
 Github is a website that performs remote hosting of git repositories. Its use is quite simple, acting mostly as a graphical interface for git usage, and as a place to store "master copies" of projects that are being edited by a large number of people. Its public nature also allows quick distribution of projects to other researchers. I'll now give a quick rundown on how github can be used in conjunction with git in order to facilitate collaboration within a large group.
 
@@ -76,7 +76,7 @@ Github has many more features that have made it a widely used tool in combinatio
 
 ### Markdown
 
-![Markdown Logo](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/markdown-logo.png)
+![Markdown Logo](https://raw.githubusercontent.com/jsimonian/stat159-fall2016-project1/master/images/markdown-logo.png)
 
 Markdown is a simple markup language, designed to be easy to read and easily convertible to HTML. This writeup itself is actually written in markdown, and converted to HTML via pandoc. (If you want to view the markdown code itself, click "Raw" at the top of this file in github). Markdown is designed to allow easy addition of images, links, code and graphics into documents. I'll present a few markdown commands, via example, below:
 
@@ -84,9 +84,9 @@ Markdown is a simple markup language, designed to be easy to read and easily con
 
 - Prefacing a line with one to six "#" characters will make the line into a header. The more characters, the smaller the header. This document includes headers with one, two, and three "#" prefaces.
 
-[Links](http://http://joseph.simonian.me) and inline images ![Stat159](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/stat159-logo.png)
+[Links](http://http://joseph.simonian.me) and inline images ![Stat159](https://raw.githubusercontent.com/jsimonian/stat159-fall2016-project1/master/images/stat159-logo.png)
 
-- Links are created in markdown by the following format: `[Link Text](link URL)`. For example, the above link is written as `[Links](http://http://joseph.simonian.me)`. Inline images are created in a similar way, with the format being `![Alt Text](image URL)`. The above image was written as `![Stat159](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/stat159-logo.png)`.
+- Links are created in markdown by the following format: `[Link Text](link URL)`. For example, the above link is written as `[Links](http://http://joseph.simonian.me)`. Inline images are created in a similar way, with the format being `![Alt Text](image URL)`. The above image was written as `![Stat159](https://raw.githubusercontent.com/jsimonian/stat159-fall2016-project1/master/images/stat159-logo.png)`.
 
 **Bold**, *Italics*, and `code`
 
@@ -150,7 +150,7 @@ This should cover the basics of `make`, and how it is used in this project. For 
 
 ### Pandoc
 
-![Pandoc Logo](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/pandoc-logo.png)
+![Pandoc Logo](https://raw.githubusercontent.com/jsimonian/stat159-fall2016-project1/master/images/pandoc-logo.png)
 
 Pandoc is a document converter, a tool used to convert files to different formats. In this project, I have used it to convert my markdown project to an HTML file. As the banner states, pandoc can read and write a wide variety of document formats, including markdown, HTML, LaTeX, Office Open XML (.docx), and Wiki markup.
 
