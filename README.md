@@ -1,7 +1,14 @@
 # Stat 159 - Project 1
-### Author: Joseph Simonian
 
-### Project Structure:
+- [Author](#author)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [License](#license)
+
+
+## Author: Joseph Simonian
+
+## Project Structure:
 
 ```
 project
@@ -25,5 +32,14 @@ project
     │   pandoc-logo.png
     │   stat159-logo.png
 ```
+
+## Usage
+
+To generate the files paper.md and paper.html, simply clone this repository and make all:
+
+		git clone https://github.com/jsimonian/stat159-fall2016-project1
+		cd stat159-fall2016-project1
+    make all
+
 ### Licence
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
