@@ -2,19 +2,19 @@
 
 ### Git
 
-[Git logo](../../images/git-logo.png)
+![Git logo](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/git-logo.png)
 
 
 ### Github
 
-[Githib Logo](../../images/github-logo.png)
+![Githib Logo](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/github-logo.png)
 
 ### Markdown
 
-[Markdown Logo](../../images/markdown-logo.png)
+![Markdown Logo](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/markdown-logo.png)
 
 ### Makefile
 
 ### Pandoc
 
-[Pandoc Logo](../../images/pandoc-logo.png)
+![Pandoc Logo](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/pandoc-logo.png)
