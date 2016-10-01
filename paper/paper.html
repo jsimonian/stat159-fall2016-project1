@@ -113,7 +113,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <ul>
 <li>Prefacing a line with one to six &quot;#&quot; characters will make the line into a header. The more characters, the smaller the header. This document includes headers with one, two, and three &quot;#&quot; prefaces.</li>
 </ul>
-<p><a href="http://http://joseph.simonian.me">Links</a> and inline images <embed src="https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/stat159-logo.png%20=400x" /></p>
+<p><a href="http://http://joseph.simonian.me">Links</a> and inline images <img src="https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/stat159-logo.png" alt="Stat159" /></p>
 <ul>
 <li>Links are created in markdown by the following format: <code>[Link Text](link URL)</code>. For example, the above link is written as <code>[Links](http://http://joseph.simonian.me)</code>. Inline images are created in a similar way, with the format being <code>![Alt Text](image URL)</code>. The above image was written as <code>![Stat159](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/stat159-logo.png)</code>.</li>
 </ul>
@@ -164,7 +164,20 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul>
 <p>This should cover the basics of <code>make</code>, and how it is used in this project. For more information on <em>make</em>, see <a href="https://github.com/unix-tools/tutorial-makefiles">Gaston Sanchez's excellent introduction</a>.</p>
 <h3 id="pandoc">Pandoc</h3>
-<p><img src="https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/pandoc-logo.png" alt="Pandoc Logo" /> ## Conclusions</p>
+<div class="figure">
+<img src="https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/pandoc-logo.png" alt="Pandoc Logo" />
+<p class="caption">Pandoc Logo</p>
+</div>
+<p>Pandoc is a document converter, a tool used to convert files to different formats. In this project, I have used it to convert my markdown project to an HTML file. As the banner states, pandoc can read and write a wide variety of document formats, including markdown, HTML, LaTeX, Office Open XML (.docx), and Wiki markup.</p>
+<p>While pandoc has many uses, its basic usage is extremely simple. It is invoked via the <code>pandoc</code> command on command-line. Common usage includes the flag <code>-s</code>, which tells pandoc to write a full document, not just a &quot;document fragment&quot;. Output is to stdout (print to console) by default, with the <code>-o</code> flag used to specify that output should go to a specific file. Thus, a basic usage of <code>pandoc</code> for this project would be:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">pandoc</span> paper/paper.md -s -o paper/paper.md</code></pre></div>
+<p>Since pandoc can take multiple files and automatically concatenate them into a single output file, that command could also be invoked as:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">pandoc</span> paper/sections/* -s -o paper/paper.md</code></pre></div>
+<p>Using the individual <code>.md</code> files under the <code>sections</code> directory to create the output file.</p>
+<p>With the addition LaTeX, we can also use pandoc to generate PDFs:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">pandoc</span> paper/paper.md --latex-engine=xelatex -o paper/final_paper.pdf</code></pre></div>
+<p>In either example, the filename of the output is customizable. However, pandoc infers its format conversion rules based upon the listed file extension of the input and output files, so those must match the data contained in the files themselves.</p>
+<p>Pandoc is an extremely useful tool in generating elegant output from raw markdown files. It can be seen for markdown files as similar to the latex compiler, converting a file written in a markup language into a file that can be read directly. ## Conclusions</p>
 <p>I hope that this paper has given you a good introduction to each of these tools, and how each one can be used in the creation of reproducible research.</p>
 <p>To prepare this paper, I mostly referred to the tutorials that I cited throughout the discussion section, at the end of the blurb on each tool.</p>
 <p>The discussions on markdown and github were the easiest parts, since I had just done the markdown lab for this course, and have a good deal of experience with github.The git and makefile introductions were the most difficult parts, as I had to consider how I would try to explain <code>git</code> and <code>make</code> to people with no prior knowledge of them.</p>

@@ -84,7 +84,7 @@ Markdown is a simple markup language, designed to be easy to read and easily con
 
 - Prefacing a line with one to six "#" characters will make the line into a header. The more characters, the smaller the header. This document includes headers with one, two, and three "#" prefaces.
 
-[Links](http://http://joseph.simonian.me) and inline images ![Stat159](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/stat159-logo.png =400x)
+[Links](http://http://joseph.simonian.me) and inline images ![Stat159](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/stat159-logo.png)
 
 - Links are created in markdown by the following format: `[Link Text](link URL)`. For example, the above link is written as `[Links](http://http://joseph.simonian.me)`. Inline images are created in a similar way, with the format being `![Alt Text](image URL)`. The above image was written as `![Stat159](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/stat159-logo.png)`.
 
@@ -151,6 +151,32 @@ This should cover the basics of `make`, and how it is used in this project. For 
 ### Pandoc
 
 ![Pandoc Logo](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/pandoc-logo.png)
+
+Pandoc is a document converter, a tool used to convert files to different formats. In this project, I have used it to convert my markdown project to an HTML file. As the banner states, pandoc can read and write a wide variety of document formats, including markdown, HTML, LaTeX, Office Open XML (.docx), and Wiki markup.
+
+While pandoc has many uses, its basic usage is extremely simple. It is invoked via the `pandoc` command on command-line. Common usage includes the flag `-s`, which tells pandoc to write a full document, not just a "document fragment". Output is to stdout (print to console) by default, with the `-o` flag used to specify that output should go to a specific file. Thus, a basic usage of `pandoc` for this project would be:
+
+```bash
+pandoc paper/paper.md -s -o paper/paper.md
+```
+
+Since pandoc can take multiple files and automatically concatenate them into a single output file, that command could also be invoked as:
+
+```bash
+pandoc paper/sections/* -s -o paper/paper.md
+```
+
+Using the individual `.md` files under the `sections` directory to create the output file.
+
+With the addition LaTeX, we can also use pandoc to generate PDFs:
+
+```bash
+pandoc paper/paper.md --latex-engine=xelatex -o paper/final_paper.pdf
+```
+
+In either example, the filename of the output is customizable. However, pandoc infers its format conversion rules based upon the listed file extension of the input and output files, so those must match the data contained in the files themselves.
+
+Pandoc is an extremely useful tool in generating elegant output from raw markdown files. It can be seen for markdown files as similar to the latex compiler, converting a file written in a markup language into a file that can be read directly.
 ## Conclusions
 
 I hope that this paper has given you a good introduction to each of these tools, and how each one can be used in the creation of reproducible research.
