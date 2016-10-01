@@ -30,7 +30,7 @@ A list of git commands:
 
 - `git pull`: Download new commits from a remote repository, merging the remote snapshot into your local system.
 
-To get more information on the usage of any of these commands, simply run `git help <command>` from your command line (for example, `git help push`). While there are many other `git` commands, the ones described above should be enough to implement a simple workflow. I will describe an example workflow in the section on *Github*. For more imformation on using `git`, check out [github's 15-minute intro]https://try.github.io/levels/1/challenges/1.
+To get more information on the usage of any of these commands, simply run `git help <command>` from your command line (for example, `git help push`). While there are many other `git` commands, the ones described above should be enough to implement a simple workflow. I will describe an example workflow in the section on *Github*. For more imformation on using `git`, check out [github's 15-minute intro](https://try.github.io/levels/1/challenges/1).
 
 ### Github
 
@@ -42,11 +42,33 @@ The most basic git workflow is simply the change->add->commit->push workflow: wo
 
 A more complex workflow, between a team of several collaborators, could go as follows. While github acts as the master copy of the project, each collaborator can perform their own work on their own machine, overwriting their local versions of the project files. When they finish making addition, they can push their changes to github to merge them into the master copy. If collaborators wish, they can work together on changes by creating a branch of the repository and modifying it. Once the collaborative work is complete, the branch can be merged into the master copy, in the same manner as individual commits would be.
 
-Github has many more features that have made it a widely used tool in combination with git. For more information of github, check out their own [Github Guides]https://guides.github.com/.
+Github has many more features that have made it a widely used tool in combination with git. For more information of github, check out their own [Github Guides](https://guides.github.com/).
 
 ### Markdown
 
 ![Markdown Logo](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/markdown-logo.png)
+
+Markdown is a simple markup language, designed to be easy to read and easily convertible to HTML. This writeup itself is actually written in markdown, and converted to HTML via pandoc. (If you want to view the markdown code itself, click "Raw" at the top of this file in github). Markdown is designed to allow easy addition of images, links, code and graphics into documents. I'll present a few markdown commands, via example, below:
+
+### Headers
+
+- Prefacing a line with one to six "#" characters will make the line into a header. The more characters, the smaller the header. This document includes headers with one, two, and three "#" prefaces.
+
+[Links](http://http://joseph.simonian.me) and inline images ![Stat159](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/stat159-logo.png)
+
+- Links are created in markdown by the following format: `[Link Text](link URL)`. For example, the above link is written as `[Links](http://http://joseph.simonian.me)`. Inline images are created in a similar way, with the format being `![Alt Text](image URL)`. The above image was written as `![Stat159](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/stat159-logo.png)`.
+
+**Bold**, *Italics*, and `code`
+
+- Text can be made bold by surrounding it with double \* characters, for example, `**Bold Text**`. Italicization works similarly, with single \* characters, for example, `*Italicized Text*`. Code fonts can be applied with the grave accent character (\`), in a similar way.
+
+1. Lists
+2. And
+3. Sublists
+
+- Lists are very intuitive in markdown, creating simply by prefacing each line of the list with a \- or \* character, or with a number. Sublists can be created by simply tabbing in the lines of the sublist to the necessary depth.
+
+While there are many more markdown commands, this is sufficient to provide a basic introduction. More information can be found in the dynamic tutorial at [markdowntutorial.com](http://www.markdowntutorial.com/).
 
 ### Makefile
 
@@ -94,7 +116,7 @@ We can examine each of the commands to see a number of features of `make`:
 
 - `clean`: Another phony target, `clean` is generally used to remove final project files - generally, this would include every file that is created using make. As you can see, to write multiple bash commands in a single `rule`, it is necessary to place all commands on the same line.
 
-This should cover the basics of `make`, and how it is used in this project. For more information on *make*, see [Gaston Sanchez's excellent introduction]https://github.com/unix-tools/tutorial-makefiles.
+This should cover the basics of `make`, and how it is used in this project. For more information on *make*, see [Gaston Sanchez's excellent introduction](https://github.com/unix-tools/tutorial-makefiles).
 
 ### Pandoc
 

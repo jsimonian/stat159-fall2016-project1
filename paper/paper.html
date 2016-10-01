@@ -93,7 +93,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><p><code>git push</code>: Upload new commits to a remote repository, merging your local snapshot into the remote version.</p></li>
 <li><p><code>git pull</code>: Download new commits from a remote repository, merging the remote snapshot into your local system.</p></li>
 </ul>
-<p>To get more information on the usage of any of these commands, simply run <code>git help &lt;command&gt;</code> from your command line (for example, <code>git help push</code>). While there are many other <code>git</code> commands, the ones described above should be enough to implement a simple workflow. I will describe an example workflow in the section on <em>Github</em>. For more imformation on using <code>git</code>, check out [github's 15-minute intro]https://try.github.io/levels/1/challenges/1.</p>
+<p>To get more information on the usage of any of these commands, simply run <code>git help &lt;command&gt;</code> from your command line (for example, <code>git help push</code>). While there are many other <code>git</code> commands, the ones described above should be enough to implement a simple workflow. I will describe an example workflow in the section on <em>Github</em>. For more imformation on using <code>git</code>, check out <a href="https://try.github.io/levels/1/challenges/1">github's 15-minute intro</a>.</p>
 <h3 id="github">Github</h3>
 <div class="figure">
 <img src="https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/github-logo.png" alt="Githib Logo" />
@@ -102,12 +102,34 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>Github is a website that performs remote hosting of git repositories. Its use is quite simple, acting mostly as a graphical interface for git usage, and as a place to store &quot;master copies&quot; of projects that are being edited by a large number of people. Its public nature also allows quick distribution of projects to other researchers. I'll now give a quick rundown on how github can be used in conjunction with git in order to facilitate collaboration within a large group.</p>
 <p>The most basic git workflow is simply the change-&gt;add-&gt;commit-&gt;push workflow: working alone, an author edits files, stages their changes, commits their changes locally, and finally uploads their changes to github to store them remotely (and make them public). This is the workflow I used in the creation of this project.</p>
 <p>A more complex workflow, between a team of several collaborators, could go as follows. While github acts as the master copy of the project, each collaborator can perform their own work on their own machine, overwriting their local versions of the project files. When they finish making addition, they can push their changes to github to merge them into the master copy. If collaborators wish, they can work together on changes by creating a branch of the repository and modifying it. Once the collaborative work is complete, the branch can be merged into the master copy, in the same manner as individual commits would be.</p>
-<p>Github has many more features that have made it a widely used tool in combination with git. For more information of github, check out their own [Github Guides]https://guides.github.com/.</p>
+<p>Github has many more features that have made it a widely used tool in combination with git. For more information of github, check out their own <a href="https://guides.github.com/">Github Guides</a>.</p>
 <h3 id="markdown">Markdown</h3>
 <div class="figure">
 <img src="https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/markdown-logo.png" alt="Markdown Logo" />
 <p class="caption">Markdown Logo</p>
 </div>
+<p>Markdown is a simple markup language, designed to be easy to read and easily convertible to HTML. This writeup itself is actually written in markdown, and converted to HTML via pandoc. (If you want to view the markdown code itself, click &quot;Raw&quot; at the top of this file in github). Markdown is designed to allow easy addition of images, links, code and graphics into documents. I'll present a few markdown commands, via example, below:</p>
+<h3 id="headers">Headers</h3>
+<ul>
+<li>Prefacing a line with one to six &quot;#&quot; characters will make the line into a header. The more characters, the smaller the header. This document includes headers with one, two, and three &quot;#&quot; prefaces.</li>
+</ul>
+<p><a href="http://http://joseph.simonian.me">Links</a> and inline images <img src="https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/stat159-logo.png" alt="Stat159" /></p>
+<ul>
+<li>Links are created in markdown by the following format: <code>[Link Text](link URL)</code>. For example, the above link is written as <code>[Links](http://http://joseph.simonian.me)</code>. Inline images are created in a similar way, with the format being <code>![Alt Text](image URL)</code>. The above image was written as <code>![Stat159](https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/stat159-logo.png)</code>.</li>
+</ul>
+<p><strong>Bold</strong>, <em>Italics</em>, and <code>code</code></p>
+<ul>
+<li>Text can be made bold by surrounding it with double * characters, for example, <code>**Bold Text**</code>. Italicization works similarly, with single * characters, for example, <code>*Italicized Text*</code>. Code fonts can be applied with the grave accent character (`), in a similar way.</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Lists</li>
+<li>And</li>
+<li>Sublists</li>
+</ol>
+<ul>
+<li>Lists are very intuitive in markdown, creating simply by prefacing each line of the list with a - or * character, or with a number. Sublists can be created by simply tabbing in the lines of the sublist to the necessary depth.</li>
+</ul>
+<p>While there are many more markdown commands, this is sufficient to provide a basic introduction. More information can be found in the dynamic tutorial at <a href="http://www.markdowntutorial.com/">markdowntutorial.com</a>.</p>
 <h3 id="makefile">Makefile</h3>
 <p><strong>make</strong> is a tool used for software build automation - that is, the process of compiling software from the form it is edited in, to the form that it is presented or run in. In the context of reproducible research, it is often used to create the final presented version of a paper from constituent parts, in addition to its role in compiling and running code.</p>
 <p>A common usage for <code>make</code> is keeping final files up-to-date with minimum effort. If many part files are used in the generation of one final project file, then re-compiling the project file will generally require all of the part files to be up-to-date. Re-compiling them all by hand would be tedious, so <code>make</code> is used to automate the compilation process in a single command. In addition, for very complex projects, the process of re-compiling all of the independent part files could take quite a bit of time. In those situation, <code>make</code> allows compilation of only those files which have been modified since the project file was last generated.</p>
@@ -140,7 +162,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><p><code>paper.html</code>: This target compiles the file <code>paper.html</code>, by invoking <code>pandoc</code> (a document converter which I will cover shortly) on <code>paper.md</code>.</p></li>
 <li><p><code>clean</code>: Another phony target, <code>clean</code> is generally used to remove final project files - generally, this would include every file that is created using make. As you can see, to write multiple bash commands in a single <code>rule</code>, it is necessary to place all commands on the same line.</p></li>
 </ul>
-<p>This should cover the basics of <code>make</code>, and how it is used in this project. For more information on <em>make</em>, see [Gaston Sanchez's excellent introduction]https://github.com/unix-tools/tutorial-makefiles.</p>
+<p>This should cover the basics of <code>make</code>, and how it is used in this project. For more information on <em>make</em>, see <a href="https://github.com/unix-tools/tutorial-makefiles">Gaston Sanchez's excellent introduction</a>.</p>
 <h3 id="pandoc">Pandoc</h3>
 <div class="figure">
 <img src="https://github.com/jsimonian/stat159-fall2016-project1/blob/master/images/pandoc-logo.png" alt="Pandoc Logo" />
