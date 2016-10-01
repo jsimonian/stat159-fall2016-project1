@@ -7,7 +7,7 @@ HTML = paper.html # HTML output file name
 
 all: $(MDTITLE) $(HTML)
 
-$(MDTITLE): $(MAIN)/$(SUB)/*
+$(MDTITLE):
 	cat $^ > $(MAIN)/$@
 
 $(HTML): $(MDTITLE)
