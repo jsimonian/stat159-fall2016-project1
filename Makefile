@@ -8,7 +8,7 @@ HTML=paper.html# HTML output file name
 all: $(MDTITLE) $(HTML)
 
 $(MDTITLE):
-	cat $^ > $(MAIN)/$@
+	cat $(MAIN)/$(SUB)/* > $(MAIN)/$@
 
 $(HTML): $(MDTITLE)
 	pandoc $(MAIN)/$< -s -o $(MAIN)/$@
