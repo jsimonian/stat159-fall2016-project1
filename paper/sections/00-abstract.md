@@ -7,8 +7,12 @@
 - [Abstract](#abstract)
 - [Introduction](#introduction)
 - [Discussion](#discussion)
+    - [Git](#git)
+    - [GitHub](#github)
+    - [Markdown](#markdown)
+    - [Makefiles](#makefile)
+    - [Pandoc](#pandoc)
 - [Conclusions](#conclusions)
-
 
 ## Abstract:
 
