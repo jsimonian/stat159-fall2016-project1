@@ -1,7 +1,7 @@
-MAIN = paper # Main directory name
-SUB = sections # Subsection directory name
-MDTITLE = paper.md # Markdown output file name
-HTML = paper.html # HTML output file name
+MAIN=paper# Main directory name
+SUB=sections# Subsection directory name
+MDTITLE=paper.md# Markdown output file name
+HTML=paper.html# HTML output file name
 
 .PHONY: all clean
 
