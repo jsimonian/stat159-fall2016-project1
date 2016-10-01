@@ -1,16 +1,17 @@
 MAIN = paper # Main directory name
 SUB = sections # Subsection directory name
-TITLE = paper # Output file name
+MDTITLE = paper # Markdown output file name
+HTML = paper # HTML output file name
 
 .PHONY: all clean
 
-all: $(MAIN).md $(MAIN).html
+all: $(MDTITLE) $(HTML)
 
-$(TITLE).md: $(MAIN)/$(SUB)/*
+$(MDTITLE): $(MAIN)/$(SUB)/*
 	cat $^ > $(MAIN)/$@
 
-$(TITLE).html: $(TITLE).md
+$(HTML): $(MDTITLE)
 	pandoc $(MAIN)/$< -s -o $(MAIN)/$@
 
 clean:
-	cd $(MAIN); rm $(TITLE).md; rm $(TITLE).html
+	cd $(MAIN); rm $(MDTITLE); rm $(HTML)
